@@ -53,11 +53,11 @@ class body:
         )
         return repositories
     
-    def rape(self) -> bool:
+    def r4pe(self) -> bool:
         """
-        Raping!
+        R4ping!
         """
-        fuck: sex.rape.action = sex.rape(partners=self.partner)
+        fuck: sex.r4pe.action = sex.r4pe(partners=self.partner)
         fuck.strength(10)
         fuck.fuck_for(10)
         cum: str = fuck.cum_after(30)
