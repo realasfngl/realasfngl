@@ -10,7 +10,7 @@ from core      import Run
 from neon      import sex
 
 
-class body:
+class Body:
     """
     My whole body and information!
     """
