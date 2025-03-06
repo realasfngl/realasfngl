@@ -26,8 +26,8 @@ class Body:
         self.age: Optional[int] = 15
         self.country: Optional[str] = "Germany"
         
-        self.main_language: Optional[str] = "Python"
-        self.middle_knowledge: List[Optional[str]] = ["Batch", "Html", "Lua", "Js", "Java"]
+        self.main_languages: List[str] = ["Python", "JS"]
+        self.middle_knowledge: List[str] = ["Batch", "Html", "Lua", "Java"]
         self.learning: List[Optional[str]] = ["Rust"]
         self.hated_languages: List[Optional[str]] = ["C++", "Go"]
         
