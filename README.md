@@ -1,7 +1,7 @@
 ## Hi, im Neon
 
 ```python
-from typing    import Optional, Dict, Union, Any, List
+from typing    import Dict, Union, Any, List
 from bs4       import BeautifulSoup
 from curl_cffi import requests
 from colorama  import Fore
@@ -14,7 +14,7 @@ class Body:
     """
     My whole body and information!
     """
-    def __init__(self, partner: Union[Dict, Any]) -> Optional[None]:
+    def __init__(self, partner: Union[Dict, Any]) -> None:
         
         self.partner: List[str, None] = []
         self.partner.extend(partner["Partner"])
@@ -22,16 +22,17 @@ class Body:
             print(f"{Fore.RED} Not taking more than 3! {Fore.RESET}")
             exit()
             
-        self.name: Optional[str] = "Neon"
-        self.age: Optional[int] = 15
-        self.country: Optional[str] = "Germany"
+        self.name: str = "Neon"
+        self.age: int = 15
+        self.country: str = "Germany"
         
+        self.topics: List[str] = ["Reverse Engineering", "Antibot Bypassing", "Web Automation"]
         self.main_languages: List[str] = ["Python", "JS"]
         self.middle_knowledge: List[str] = ["Batch", "Html", "Lua", "Java"]
-        self.learning: List[Optional[str]] = ["Rust"]
-        self.hated_languages: List[Optional[str]] = ["C++", "Go"]
+        self.learning: List[str] = ["Rust"]
+        self.hated_languages: List[str] = ["C++", "Go"]
         
-        self.interests: List[Optional[str]] = ["coding for fun", "Playing games", "being racist", "cooking"]
+        self.interests: List[str] = ["coding for fun", "Playing games", "being racist", "cooking"]
         
         self.social_media: Union[str, int, Any] = {
             "Discord": "njk0mja",
@@ -41,13 +42,13 @@ class Body:
         }
     
     @Run.Error
-    def projects(self) -> Optional[list]:
+    def projects(self) -> list:
         """
         Getting my repositories heh
         """
-        repositories: Optional[list] = []
+        repositories: list = []
         
-        github: Optional[str] = self.social_media["Github"]
+        github: str = self.social_media["Github"]
         
         repositories_req: requests.models.Response = requests.get(f"{github}?tab=repositories")
         
@@ -59,7 +60,7 @@ class Body:
         return repositories
     
     @Run.Error
-    def r4pe(self) -> Optional[bool]:
+    def r4pe(self) -> bool:
         """
         R4ping!
         """
@@ -70,10 +71,7 @@ class Body:
         cum: str = fuck.cum_after(30)
         
         if cum != None:
-            
             return True
-
         else:
-            
             return False
 ```
