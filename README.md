@@ -37,7 +37,7 @@ class Body:
         self.social_media: Union[str, int, Any] = {
             "Discord": "njk0mja",
             "Telegram": "@neonasfngl",
-            "Whatsapp": 385950600999,
+            "Whatsapp": ‪491636478284‬,
             "Github": "https://github.com/realasfngl"
         }
     
