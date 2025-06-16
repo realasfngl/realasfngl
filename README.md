@@ -7,23 +7,15 @@ from curl_cffi import requests
 from colorama  import Fore
 
 from core      import Run
-from neon      import sex
-
 
 class Body:
     """
     My whole body and information!
     """
-    def __init__(self, partner: Union[Dict, Any]) -> None:
-        
-        self.partner: List[str, None] = []
-        self.partner.extend(partner["Partner"])
-        if len(partner["Partner"]) > 3:
-            print(f"{Fore.RED} Not taking more than 3! {Fore.RESET}")
-            exit()
+    def __init__(self) -> None:
             
         self.name: str = "Neon"
-        self.age: int = 15
+        self.age: int = 16
         self.country: str = "Germany"
         
         self.topics: List[str] = ["Reverse Engineering", "Antibot Bypassing", "Web Automation"]
@@ -32,7 +24,7 @@ class Body:
         self.learning: List[str] = ["Rust"]
         self.hated_languages: List[str] = ["C++", "Go"]
         
-        self.interests: List[str] = ["coding for fun", "Playing games", "being racist", "cooking"]
+        self.interests: List[str] = ["coding for fun", "Playing games", "cooking"]
         
         self.social_media: Union[str, int, Any] = {
             "Discord": "njk0mja",
@@ -58,20 +50,3 @@ class Body:
             ]
         )
         return repositories
-    
-    @Run.Error
-    def r4pe(self) -> bool:
-        """
-        R4ping!
-        """
-        fuck: sex.r4pe.action = sex.r4pe(partners=self.partner)
-        fuck.strength(10)
-        fuck.fuck_for(10)
-        
-        cum: str = fuck.cum_after(30)
-        
-        if cum != None:
-            return True
-        else:
-            return False
-```
