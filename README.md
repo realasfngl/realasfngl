@@ -20,14 +20,14 @@ class Body:
         
         self.topics: List[str] = ["Reverse Engineering", "Antibot Bypassing", "Web Automation"]
         self.main_languages: List[str] = ["Python", "JS"]
-        self.middle_knowledge: List[str] = ["Batch", "Html", "Lua", "Java"]
-        self.learning: List[str] = ["Rust"]
+        self.middle_knowledge: List[str] = ["Java", "zig"]
+        self.learning: List[str] = ["Rust", "zig"]
         self.hated_languages: List[str] = ["C++", "Go"]
         
         self.interests: List[str] = ["coding for fun", "Playing games", "cooking"]
         
         self.social_media: Union[str, int, Any] = {
-            "Discord": "njk0mja",
+            "Discord": "neonnn69",
             "Telegram": "@neonasfngl",
             "Whatsapp": ‪491636478284‬,
             "Github": "https://github.com/realasfngl"
@@ -36,7 +36,7 @@ class Body:
     @Run.Error
     def projects(self) -> list:
         """
-        Getting my repositories heh
+        Getting my repositories
         """
         repositories: list = []
         
