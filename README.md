@@ -18,16 +18,16 @@ class Body:
         self.age: int = 16
         self.country: str = "Germany"
         
-        self.topics: List[str] = ["Reverse Engineering", "Antibot Bypassing", "Web Automation"]
+        self.topics: List[str] = ["Reverse Engineering", "Antibot Bypassing", "Web Automation", "Mobile Automation"]
         self.main_languages: List[str] = ["Python", "JS"]
         self.middle_knowledge: List[str] = ["Java", "zig"]
         self.learning: List[str] = ["Rust", "zig"]
         self.hated_languages: List[str] = ["C++", "Go"]
         
-        self.interests: List[str] = ["coding for fun", "Playing games", "cooking"]
+        self.interests: List[str] = ["Coding", "Playing games", "cooking"]
         
         self.social_media: Union[str, int, Any] = {
-            "Discord": "neonnn69",
+            "Discord": "neonasfngl",
             "Telegram": "@neonasfngl",
             "Whatsapp": ‪491636478284‬,
             "Github": "https://github.com/realasfngl"
